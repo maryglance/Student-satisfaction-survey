@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Satisfaction Survey</title>
+  </head>
+  <body>
+    <h1 id="title">Student Satisfaction Survey</h1>
+    <p id="description">The purpose of this survey is to collect information about student satisfaction of our school.</p>
+
+    <form id="survey-form" action="#" method="post" aria-describedby="description">
+      <fieldset>
+        <legend>Student Information</legend>
+
+        <label for="name" id="name-label">Full name:</label>
+        <input id="name" name="name" type="text" required placeholder="Enter your full name" />
+        <br /><br />
+
+        <label for="email" id="email-label">Email address:</label>
+        <input id="email" name="email" type="email" required placeholder="Enter your email address" />
+        <br /><br />
+
+        <label for="age" id="number-label">Age (optional):</label>
+        <input id="age" name="age" type="number" min="5" max="120" placeholder="Age" />
+        <br /><br />
+
+        <label for="dropdown">Grade level</label>
+        <select id="dropdown" name="grade">
+          <option value="grade-1">Grade 1</option>
+          <option value="grade-2">Grade 2</option>
+          <option value="grade-3">Grade 3</option>
+          <option value="grade-4">Grade 4</option>
+          <option value="grade-5">Grade 5</option>
+          <option value="grade-6">Grade 6</option>
+          <option value="grade-7">Grade 7</option>
+          <option value="grade-8">Grade 8</option>
+          <option value="grade-9">Grade 9</option>
+          <option value="grade-10">Grade 10</option>
+          <option value="grade-11">Grade 11</option>
+          <option value="grade-12">Grade 12</option>
+        </select>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Survey Questions</legend>
+
+        <p>1. How likely are you to recommend this school to your friends and family?</p>
+        <input type="radio" name="recommendation" id="verylikely-1" value="verylikely" />
+        <label for="verylikely-1">Very likely</label>
+        <br />
+        <input type="radio" name="recommendation" id="somewhatlikely-1" value="somewhatlikely" />
+        <label for="somewhatlikely-1">Somewhat likely</label>
+        <br />
+        <input type="radio" name="recommendation" id="neutral-1" value="neutral" />
+        <label for="neutral-1">Neutral</label>
+        <br />
+        <input type="radio" name="recommendation" id="unlikely-1" value="unlikely" />
+        <label for="unlikely-1">Unlikely</label>
+        <br />
+        <input type="radio" name="recommendation" id="veryunlikely-1" value="veryunlikely" />
+        <label for="veryunlikely-1">Very unlikely</label>
+
+        <br /><br />
+        <p>2. How satisfied are you with the school's coursework?</p>
+        <input type="radio" name="coursework_satisfaction" id="verysatisfied-1" value="verysatisfied" />
+        <label for="verysatisfied-1">Very satisfied</label>
+        <br />
+        <input type="radio" name="coursework_satisfaction" id="somewhatsatisfied-1" value="somewhatsatisfied" />
+        <label for="somewhatsatisfied-1">Somewhat satisfied</label>
+        <br />
+        <input type="radio" name="coursework_satisfaction" id="neutral-2" value="neutral" />
+        <label for="neutral-2">Neutral</label>
+        <br />
+        <input type="radio" name="coursework_satisfaction" id="dissatisfied-1" value="dissatisfied" />
+        <label for="dissatisfied-1">Dissatisfied</label>
+        <br />
+        <input type="radio" name="coursework_satisfaction" id="highlydissatisfied-1" value="highlydissatisfied" />
+        <label for="highlydissatisfied-1">Highly dissatisfied</label>
+
+        <br /><br />
+        <p>3. How satisfied are you with the school's transportation system?</p>
+        <input type="radio" name="transportation" id="verysatisfied-2" value="verysatisfied" />
+        <label for="verysatisfied-2">Very satisfied</label>
+        <br />
+        <input type="radio" name="transportation" id="somewhatsatisfied-2" value="somewhatsatisfied" />
+        <label for="somewhatsatisfied-2">Somewhat satisfied</label>
+        <br />
+        <input type="radio" name="transportation" id="neutral-3" value="neutral" />
+        <label for="neutral-3">Neutral</label>
+        <br />
+        <input type="radio" name="transportation" id="dissatisfied-2" value="dissatisfied" />
+        <label for="dissatisfied-2">Dissatisfied</label>
+        <br />
+        <input type="radio" name="transportation" id="highlydissatisfied-2" value="highlydissatisfied" />
+        <label for="highlydissatisfied-2">Highly dissatisfied</label>
+
+        <br /><br />
+        <p>4. Do you feel that this school is preparing you adequately for the job market?</p>
+        <input type="radio" name="job_market" id="yes-option" value="yes" />
+        <label for="yes-option">Yes</label>
+        <br />
+        <input type="radio" name="job_market" id="no-option" value="no" />
+        <label for="no-option">No</label>
+
+        <br /><br />
+        <p>5. Are you satisfied with the quality of teaching?</p>
+        <input type="radio" name="teaching" id="yes-option-2" value="yes" />
+        <label for="yes-option-2">Yes, I am</label>
+        <br />
+        <input type="radio" name="teaching" id="no-option-2" value="no" />
+        <label for="no-option-2">No, I am not</label>
+
+        <br /><br />
+        <p>6. Do you think that the school has the right testing and grading method?</p>
+        <input type="radio" name="method" id="yes-option-3" value="yes" />
+        <label for="yes-option-3">Yes</label>
+        <br />
+        <input type="radio" name="method" id="no-option-3" value="no" />
+        <label for="no-option-3">No</label>
+
+        <br /><br />
+        <p>7. What is your most memorable experience in this school so far?</p>
+        <label for="memorable" class="visually-hidden">Most memorable experience</label>
+        <textarea id="memorable" name="memorable" cols="40" rows="8"></textarea>
+
+        <br /><br />
+        <p>8. What are you most dissatisfied with in the school's operations?</p>
+        <label for="operations" class="visually-hidden">Operations dissatisfaction</label>
+        <textarea id="operations" name="operations" cols="40" rows="8"></textarea>
+
+        <br /><br />
+        <p>9. How helpful is your course advisor in dealing with the issues you face?</p>
+        <input type="radio" name="issues" id="veryhelpful" value="veryhelpful" />
+        <label for="veryhelpful">Very helpful</label>
+        <br />
+        <input type="radio" name="issues" id="quitehelpful" value="quitehelpful" />
+        <label for="quitehelpful">Quite helpful</label>
+        <br />
+        <input type="radio" name="issues" id="neutral-4" value="neutral" />
+        <label for="neutral-4">Neutral</label>
+        <br />
+        <input type="radio" name="issues" id="slightlyhelpful" value="slightlyhelpful" />
+        <label for="slightlyhelpful">Slightly helpful</label>
+        <br />
+        <input type="radio" name="issues" id="nothelpfulatall" value="nothelpfulatall" />
+        <label for="nothelpfulatall">Not helpful at all</label>
+
+        <br /><br />
+        <p>10. What would you like to see improve?</p>
+        <input type="checkbox" name="improvements[]" value="teaching-quality" id="improve-teaching-quality" />
+        <label for="improve-teaching-quality">Teaching quality</label>
+        <br />
+        <input type="checkbox" name="improvements[]" value="facilities" id="improve-facilities" />
+        <label for="improve-facilities">Facilities</label>
+        <br />
+        <input type="checkbox" name="improvements[]" value="coursework" id="improve-coursework" />
+        <label for="improve-coursework">Coursework</label>
+        <br />
+        <input type="checkbox" name="improvements[]" value="testingmethod" id="improve-testingmethod" />
+        <label for="improve-testingmethod">Testing method</label>
+        <br />
+        <input type="checkbox" name="improvements[]" value="gradingmethod" id="improve-gradingmethod" />
+        <label for="improve-gradingmethod">Grading method</label>
+        <br />
+        <input type="checkbox" name="improvements[]" value="transportationsystem" id="improve-transportationsystem" />
+        <label for="improve-transportationsystem">Transportation System</label>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Any comments or suggestions?</legend>
+        <label for="comments" class="visually-hidden">Comments and suggestions</label>
+        <textarea cols="40" rows="8" name="comments" id="comments"></textarea>
+      </fieldset>
+
+      <br />
+      <button id="submit-button" type="submit" style="min-width: 100px; height: 32px;">Submit</button>
+    </form>
+  </body>
+</html>
